@@ -17,8 +17,29 @@ html body {
     font-size: 55.5%;
   }
 }
-html body {
+html {
+  overflow-x: hidden;
+}
+body {
+  cursor: default;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  color: inherit;
+  border: 0;
   margin: 0;
+  padding: 0;
+}
+section {
+  max-width: 131rem;
+}
+a {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 .basic-font {
   font-family: ProximaNova;
@@ -31,24 +52,57 @@ html body {
   display: flex;
   flex-direction: row;
 }
+.logo {
+  height: 4rem;
+}
 .navbar {
   height: 10.6rem;
-  width: 100vw;
-  background-color: red;
   align-items: center;
+  max-width: 131rem;
+  margin: auto;
+  padding: 0 12rem;
 }
-.navbar .navbar-sections {
-  padding-left: 13rem;
-}
-.navbar .navbar-sections div:not(.icon) {
+.navbar .navbar-sections div:not(.logo) {
   margin-left: 4rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #27415c;
 }
 .section-one {
   min-height: 760px;
+  position: relative;
+  padding: 0rem 13rem;
+  margin: auto;
+}
+.section-one .img-float {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 56rem;
+  height: 51rem;
+  position: absolute;
+  left: 60%;
+  top: -9rem;
+  background-image: url("https://tomasaldea.github.io/PruebaTecalis/img/Vectortop.svg");
+}
+.section-one .top-svg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 74rem;
+  height: 67rem;
+  position: absolute;
+  right: -24rem;
+  top: -43rem;
+  background-image: url("https://tomasaldea.github.io/PruebaTecalis/img/top-svg.svg");
+  z-index: -9;
 }
 .section-one .container {
   max-width: 64rem;
-  margin: 13rem 0rem 3rem 12rem;
+  margin-top: 13rem;
+  width: calc(100% - 25rem);
 }
 .section-one .container .no-fill {
   text-transform: uppercase;
@@ -73,7 +127,13 @@ html body {
   line-height: 26px;
   margin-bottom: 5rem;
 }
+.section-one .container .text span {
+  color: #97bfe7;
+}
 .section-one .container .button-fill {
+  display: flex;
+  max-width: 6rem;
+  align-items: center;
   background-color: #46D6DD;
   font-weight: 500;
   font-size: 18px;
@@ -83,6 +143,181 @@ html body {
   color: white;
   text-decoration: none;
 }
+.section-one .container .button-fill img {
+  margin-left: 0.7rem;
+}
 .section-one .ellipse-container {
-  background-image: url("C:\xampp\htdocs\PruebaTecalis\img\Ellipse.png");
+  background-image: url("https://tomasaldea.github.io/PruebaTecalis/img/Ellipse.svg");
+}
+.section-two {
+  justify-content: space-between;
+  padding-bottom: 17rem;
+  width: calc(100% - 25rem);
+  margin: -10rem auto;
+  /*  @media (max-width: 1500px) {
+        .img-container {
+            max-width: 68rem;
+        }
+    } */
+}
+.section-two .img-container {
+  max-width: 790px;
+  margin-right: 12rem;
+}
+.section-two .img-container .img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://tomasaldea.github.io/PruebaTecalis/img/Rectangle.svg");
+  max-width: 79rem;
+  max-height: 41rem;
+  height: 41rem;
+  border-radius: 2rem;
+}
+.section-two .img-container .text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: -webkit-center;
+  margin-top: 2rem;
+}
+.section-two .list-container {
+  max-width: 35rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.section-two .list-container .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+.section-two .list-container .link {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  cursor: pointer;
+  height: 5rem;
+  align-items: center;
+}
+.section-two .list-container .link span {
+  margin-left: 1rem;
+}
+.section-two .list-container .link:hover {
+  transition: all 0.8s ease;
+  background-color: #DDFFFF;
+}
+footer {
+  max-height: 402px;
+  background-color: #DDFFFF;
+  padding-top: 6rem;
+}
+footer .logo.mobile {
+  display: none;
+}
+footer .link-container {
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+footer .link-container .col {
+  margin-left: 4rem;
+}
+footer .link-container .col a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #607c8e;
+}
+footer .link-container .col a.strong {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #27415c;
+}
+footer .link-container .col a.title {
+  color: #5C9DDC;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+footer .link-container .col a:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+footer .rrss {
+  max-width: 131rem;
+  height: 8rem;
+  width: calc(100% - 50rem);
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  border-top: 1px solid #27415c42;
+}
+footer .rrss .row img {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 5rem;
+  }
+  .section-one {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+  .section-one .container {
+    text-align: -webkit-center;
+    width: calc(100% - 12rem);
+  }
+  .section-one .img-float {
+    width: 42rem;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+  }
+  .section-two {
+    margin-top: 4rem;
+    width: calc(100% - 12rem);
+  }
+  .section-two .img-container {
+    margin-right: 5rem;
+  }
+  footer {
+    max-height: max-content;
+    position: relative;
+    padding-top: 8rem;
+  }
+  footer .logo.mobile {
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: absolute;
+    right: 50%;
+    top: 2rem;
+  }
+  footer .link-container {
+    flex-wrap: wrap;
+  }
+  footer .link-container .logo.desktop {
+    display: none;
+  }
+  footer .link-container .col {
+    width: 13rem;
+  }
+  footer .rrss {
+    width: calc(100% - 16rem);
+  }
+}
+@media (max-width: 797px) {
+  .section-two {
+    flex-direction: column;
+  }
+  .section-two .img-container .text {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+  }
 }
