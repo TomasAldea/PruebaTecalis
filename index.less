@@ -10,32 +10,37 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+
     body {
-      font: 14px "";
+        font: 14px "";
     }
+
     @media (min-width: 1921px) and (max-height: 600px) {
-      font-size: 55.5%;
+        font-size: 55.5%;
     }
+
     // @media (min-width: 1601px) {
     //   font-size: 0.625vw;
     // }
-  }
+}
 
-  html {
+html {
     overflow-x: hidden;
-  }
-  body {
+}
+
+body {
     cursor: default;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  * {
+}
+
+* {
     color: inherit;
     border: 0;
     margin: 0;
     padding: 0;
-  }
+}
 
 // Generic styles
 @color1: #5C9DDC;
@@ -52,6 +57,7 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
 .basic-bg() {
     background-position: center;
     background-size: cover;
@@ -71,6 +77,7 @@ a {
     display: flex;
     flex-direction: row;
 }
+
 .logo {
     height: 4rem;
 }
@@ -83,8 +90,12 @@ a {
     max-width: 131rem;
     margin: auto;
     padding: 0 12rem;
-    .navbar-sections {
 
+    .burger {
+        display: none;
+    }
+
+    .navbar-sections {
         div:not(.logo) {
             margin-left: 4rem;
             cursor: pointer;
@@ -92,6 +103,43 @@ a {
             font-size: 18px;
             line-height: 24px;
             color: #27415c;
+        }
+
+        &.mobile {
+            display: none;
+
+            &.active {
+                display: block;
+                z-index: 9;
+                position: absolute;
+                top: 9rem;
+                background-color: white;
+                padding: 4rem 0rem;
+                margin: auto;
+                right: 4rem;
+                border: 1px solid #EEEEEE;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 16px;
+                transition: all 0.1s ease;
+
+                div {
+                    display: block;
+                    margin: 2rem auto;
+                    width: 18rem;
+                    padding-left: 3rem;
+                    position: relative;
+
+                    &::after {
+                        content: " ";
+                        width: calc(100% - 6.5rem);
+                        background-color: #EEEEEE;
+                        height: 2px;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 31px;
+                    }
+                }
+            }
         }
     }
 }
@@ -105,6 +153,7 @@ a {
     position: relative;
     padding: 0rem 13rem;
     margin: auto;
+
     .img-float {
         background-position: center;
         background-size: contain;
@@ -116,6 +165,7 @@ a {
         top: -9rem;
         background-image: url("https://tomasaldea.github.io/PruebaTecalis/img/Vectortop.svg");
     }
+
     .top-svg {
         background-position: center;
         background-size: contain;
@@ -128,10 +178,12 @@ a {
         background-image: url("https://tomasaldea.github.io/PruebaTecalis/img/top-svg.svg");
         z-index: -9;
     }
+
     .container {
         max-width: 64rem;
         margin-top: 13rem;
         width: calc(100% - 25rem);
+
         .no-fill {
             text-transform: uppercase;
             color: @color1;
@@ -156,6 +208,7 @@ a {
             font-size: 18px;
             line-height: 26px;
             margin-bottom: 5rem;
+
             span {
                 color: #97bfe7;
             }
@@ -173,6 +226,7 @@ a {
             border-radius: 1rem;
             color: white;
             text-decoration: none;
+
             img {
                 margin-left: 0.7rem;
             }
@@ -194,9 +248,19 @@ a {
     width: calc(100% - 25rem);
     margin: -10rem auto;
 
+    .title.mobile {
+        display: none;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
     .img-container {
         max-width: 790px;
         margin-right: 12rem;
+
         .img {
             .basic-bg();
             background-image: url("https://tomasaldea.github.io/PruebaTecalis/img/Rectangle.svg");
@@ -220,7 +284,7 @@ a {
         justify-content: space-between;
         margin-bottom: 3rem;
 
-        .title {
+        .title.desktop {
             font-weight: 700;
             font-size: 36px;
             line-height: 46px;
@@ -234,9 +298,11 @@ a {
             cursor: pointer;
             height: 5rem;
             align-items: center;
+
             span {
                 margin-left: 1rem;
             }
+
             &:hover {
                 transition: all 0.8s ease;
                 background-color: #DDFFFF;
@@ -244,7 +310,8 @@ a {
         }
 
     }
-   /*  @media (max-width: 1500px) {
+
+    /*  @media (max-width: 1500px) {
         .img-container {
             max-width: 68rem;
         }
@@ -258,22 +325,26 @@ footer {
     max-height: 402px;
     background-color: @color3;
     padding-top: 6rem;
+
     .logo {
         &.mobile {
             display: none;
         }
     }
+
     .link-container {
         justify-content: center;
         padding-bottom: 3rem;
 
         .col {
             margin-left: 4rem;
+
             a {
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 22px;
                 color: #607c8e;
+
                 &.strong {
                     font-weight: 700;
                     font-size: 16px;
@@ -288,6 +359,7 @@ footer {
                     line-height: 22px;
                     text-transform: uppercase;
                 }
+
                 &:not(:last-child) {
                     margin-bottom: 0.8rem;
                 }
@@ -303,6 +375,7 @@ footer {
         margin: auto;
         align-items: center;
         border-top: 1px solid #27415c42;
+
         .row {
             img {
                 max-width: 1.5rem;
@@ -319,62 +392,115 @@ footer {
     .navbar {
         padding: 0 5rem;
     }
+
     .section-one {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         padding: 0;
+
         .container {
             text-align: -webkit-center;
             width: calc(100% - 12rem);
         }
+
         .img-float {
-            width: 42rem;
+            width: 33rem;
             position: inherit;
             left: inherit;
             top: inherit;
         }
     }
+
     .section-two {
         margin-top: 4rem;
-        width: calc(100% - 12rem);
+
+
         .img-container {
             margin-right: 5rem;
         }
     }
-     footer {
+
+    footer {
         max-height: max-content;
         position: relative;
         padding-top: 8rem;
+
         .logo.mobile {
             display: block;
             text-align: center;
             margin-bottom: 3rem;
             position: absolute;
-            right: 50%;
-            top: 2rem;        
+            left: 50%;
+            top: 2rem;
+            transform: translateX(-50%);
         }
+
         .link-container {
             flex-wrap: wrap;
+
             .logo.desktop {
                 display: none;
             }
+
             .col {
                 width: 13rem;
             }
         }
+
         .rrss {
             width: calc(100% - 16rem);
         }
     }
 }
 
-@media (max-width: 797px) { 
+@media (max-width: 797px) {
+    .navbar {
+        justify-content: space-between;
+
+        .burger {
+            display: block;
+            width: 4rem;
+        }
+
+        .navbar-sections {
+            div {
+                display: none;
+            }
+        }
+    }
+
+    .section-one {
+        .container {
+            width: calc(100% - 6rem);
+        }
+    }
+
     .section-two {
         flex-direction: column;
-        .img-container .text {
-            margin-top: 6rem;
-            margin-bottom: 5rem;
+        width: calc(100% - 6rem);
+
+        .title.mobile {
+            display: block;
+        }
+
+        .list-container {
+            .title.desktop {
+                display: none;
+            }
+        }
+
+        .img-container {
+            margin-right: inherit;
+
+            .img {
+                height: 20rem;
+            }
+
+            .text {
+                margin-top: 6rem;
+                margin-bottom: 5rem;
+            }
         }
     }
 }
