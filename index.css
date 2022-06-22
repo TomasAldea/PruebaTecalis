@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("ProximaNovaFont.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html body {
+  font: 14px "";
+}
+@media (min-width: 1921px) and (max-height: 600px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+html body {
+  margin: 0;
+}
+.basic-font {
+  font-family: ProximaNova;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.navbar {
+  height: 10.6rem;
+  width: 100vw;
+  background-color: red;
+  align-items: center;
+}
+.navbar .navbar-sections {
+  padding-left: 13rem;
+}
+.navbar .navbar-sections div:not(.icon) {
+  margin-left: 4rem;
+}
+.section-one {
+  min-height: 760px;
+}
+.section-one .container {
+  max-width: 64rem;
+  margin: 13rem 0rem 3rem 12rem;
+}
+.section-one .container .no-fill {
+  text-transform: uppercase;
+  color: #5C9DDC;
+  font-size: 1.6rem;
+  border: 2px solid #5C9DDC;
+  border-radius: 3rem;
+  padding: 1.2rem 3rem;
+  background-color: transparent;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.section-one .container .title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 54px;
+  margin-bottom: 3rem;
+}
+.section-one .container .text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 5rem;
+}
+.section-one .container .button-fill {
+  background-color: #46D6DD;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.section-one .ellipse-container {
+  background-image: url("C:\xampp\htdocs\PruebaTecalis\img\Ellipse.png");
+}
