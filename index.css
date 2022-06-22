@@ -368,6 +368,10 @@ footer .rrss .row img {
   .navbar .navbar-sections div {
     display: none;
   }
+  .section-one .top-svg {
+    right: -35rem;
+    top: -45rem;
+  }
   .section-one .container {
     width: calc(100% - 6rem);
   }
