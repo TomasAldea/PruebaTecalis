@@ -351,6 +351,7 @@ footer .rrss .row img {
   }
   footer .link-container .col {
     width: 13rem;
+    margin-bottom: 2rem;
   }
   footer .rrss {
     width: calc(100% - 16rem);
