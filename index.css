@@ -69,8 +69,8 @@ a {
   margin-left: 4rem;
   cursor: pointer;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   color: #27415c;
 }
 .navbar .navbar-sections.mobile {
@@ -87,7 +87,7 @@ a {
   right: 4rem;
   border: 1px solid #EEEEEE;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
+  border-radius: 1.6rem;
   transition: all 0.1s ease;
 }
 .navbar .navbar-sections.mobile.active div {
@@ -104,10 +104,10 @@ a {
   height: 2px;
   position: absolute;
   bottom: -3px;
-  left: 31px;
+  left: 3.1rem;
 }
 .section-one {
-  min-height: 760px;
+  min-height: 76rem;
   position: relative;
   padding: 0rem 13rem;
   margin: auto;
@@ -154,13 +154,13 @@ a {
 .section-one .container .title {
   font-weight: 700;
   font-size: 50px;
-  line-height: 54px;
+  line-height: 5.4rem;
   margin-bottom: 3rem;
 }
 .section-one .container .text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   margin-bottom: 5rem;
 }
 .section-one .container .text span {
@@ -172,7 +172,7 @@ a {
   align-items: center;
   background-color: #46D6DD;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-transform: capitalize;
   padding: 1rem 3rem;
   border-radius: 1rem;
@@ -199,13 +199,13 @@ a {
 .section-two .title.mobile {
   display: none;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
   text-align: center;
   margin-bottom: 2rem;
 }
 .section-two .img-container {
-  max-width: 790px;
+  max-width: 79rem;
   margin-right: 12rem;
 }
 .section-two .img-container .img {
@@ -220,8 +220,8 @@ a {
 }
 .section-two .img-container .text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   text-align: -webkit-center;
   margin-top: 2rem;
 }
@@ -232,14 +232,14 @@ a {
 }
 .section-two .list-container .title.desktop {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
 }
 .section-two .list-container .link {
   display: flex;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   cursor: pointer;
   height: 5rem;
   align-items: center;
@@ -252,7 +252,7 @@ a {
   background-color: #DDFFFF;
 }
 footer {
-  max-height: 402px;
+  max-height: 40.2rem;
   background-color: #DDFFFF;
   padding-top: 6rem;
 }
@@ -268,21 +268,21 @@ footer .link-container .col {
 }
 footer .link-container .col a {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   color: #607c8e;
 }
 footer .link-container .col a.strong {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: #27415c;
 }
 footer .link-container .col a.title {
   color: #5C9DDC;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   text-transform: uppercase;
 }
 footer .link-container .col a:not(:last-child) {
